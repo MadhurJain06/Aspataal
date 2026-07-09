@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aspataal-frontend
+  labels:
+    app: aspataal-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aspataal-frontend
+  template:
+    metadata:
+      labels:
+        app: aspataal-frontend
+    spec:
+      containers:
+        - name: aspataal-frontend
+          image: aspataal-frontend:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
+          env:
+            - name: VITE_API_URL
+              value: "http://localhost:30001"
