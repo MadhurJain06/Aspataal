@@ -4,13 +4,13 @@
 
 ---
 
-## 📋 What Aspataal Is All About
+## What Aspataal Is All About
 
 In modern healthcare, delays in detecting abnormal vitals can lead to adverse patient outcomes. Aspataal addresses this by simulating, processing, and visualising critical physiological telemetry streams in real time. It serves as a mock clinic-monitoring and chaos-testing environment, letting engineers and clinicians examine how streaming health telemetry reacts to infrastructure strain, network failures, and emergency scenarios.
 
 ---
 
-## 🌟 Key Highlights & Capabilities
+## Key Highlights & Capabilities
 
 - **Streaming Telemetry**: Simulates key physiological signals (Heart Rate, Blood Pressure, SpO2, and Temperature) at configurable intervals.
 - **Clinical Alert Engine**: Instantly flags abnormal signals and categorises them into warnings or critical alarms based on medical thresholds.
@@ -21,7 +21,7 @@ In modern healthcare, delays in detecting abnormal vitals can lead to adverse pa
 
 ---
 
-## 🗂️ Project Repository Structure
+## Project Repository Structure
 
 The workspace is organized into a clean mono-repo style structure containing:
 
@@ -37,7 +37,7 @@ aspataal-main/
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Frontend**: React, Vite, Recharts (for live plotting), Lucide (for iconography), Vanilla CSS.
 - **Backend**: Node.js, Express, Prometheus Client (`prom-client`).

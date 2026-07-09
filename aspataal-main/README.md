@@ -4,7 +4,7 @@
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 Aspataal uses a decoupled architecture where the Frontend acts as a client dashboard, the Backend simulates patient vital statistics and exposes a Prometheus metric endpoint, and the telemetry stack (Prometheus & Grafana) provides visual diagnostics.
 
@@ -23,7 +23,7 @@ graph TD
 
 ---
 
-## ✨ Core Features
+## Core Features
 
 1. **Continuous Vital Telemetry**: Real-time heart rate, blood pressure, SpO2, and temperature updates generated dynamically by a deterministic simulation engine.
 2. **Clinical Alert Engine**: Instantly flags abnormal signals and categorizes them into `WARNING` or `CRITICAL` levels based on medical thresholds.
@@ -31,7 +31,7 @@ graph TD
 4. **Clinical Playback System**: Features a black-box recording buffer that allows operators to scrub back in time second-by-second to reconstruct patient vital events.
 5. **Chaos Testing Console**: Provides tools to simulate real-world emergency scenarios—including mass-casualty events, power outages, and vital surges—designed to trigger alerts and drive CPU loads to test Kubernetes scaling.
 
-### 🩺 Normal Vitals Thresholds
+### Normal Vitals Thresholds
 
 The platform evaluates patient status using the following standard clinical bands:
 
@@ -44,7 +44,7 @@ The platform evaluates patient status using the following standard clinical band
 
 ---
 
-## 🚀 How to Run Aspataal
+## How to Run Aspataal
 
 You can spin up Aspataal using three different modes depending on your needs.
 
@@ -124,7 +124,7 @@ For production-mimicking deployments, Kubernetes manifests are provided under th
 
 ---
 
-## 📊 Grafana and Prometheus Integration
+## Grafana and Prometheus Integration
 
 Aspataal exposes native Prometheus metrics at `/metrics` from the backend service. Follow these steps to set up your monitoring dashboard.
 
@@ -155,7 +155,7 @@ Aspataal exposes native Prometheus metrics at `/metrics` from the backend servic
 
 ---
 
-## 📈 Exposed Telemetry Metrics
+## Exposed Telemetry Metrics
 
 Once connected, you will be able to monitor the following metrics inside the dashboard:
 
@@ -170,7 +170,7 @@ Once connected, you will be able to monitor the following metrics inside the das
 
 ---
 
-## 🧪 Chaos Testing & Scaling Verification
+## Chaos Testing & Scaling Verification
 To see the metrics and Kubernetes autoscaler in action:
 1. Access the **Chaos Console** from the frontend dashboard.
 2. Trigger a **Mass Admission** or crank up the **Simulation Speed** to `10x`.
